@@ -19,10 +19,12 @@
   --h2-font: 3.5rem;
   --p-font: 1.1rem;
 }
+
 body {
   background: var(--bg-color);
   color: var(--text-color);
 }
+
 header {
   position: fixed;
   right: 0;
@@ -37,13 +39,16 @@ header {
   border-bottom: 1px solid transparent;
   transition: all 0.4s ease;
 }
+
 .logo img {
   width: 50px;
   height: auto;
 }
+
 .navbar {
   display: flex;
 }
+
 .navbar a {
   color: var(--main2-color);
   font-size: var(--p-font);
@@ -53,10 +58,12 @@ header {
   border-radius: 0.5rem;
   transition: all 0.4s ease;
 }
+
 .navbar a:hover {
   background: var(--main-color);
   color: var(--text-color);
 }
+
 #menu-icon {
   font-size: 36px;
   color: var(--text-color);
@@ -68,6 +75,7 @@ header {
 section {
   padding: 160px 16% 90px;
 }
+
 .home {
   height: 100vh;
   width: 100%;
@@ -78,6 +86,7 @@ section {
   align-items: center;
   justify-content: flex-start;
 }
+
 .home #particles-js {
   position: absolute;
   top: 0;
@@ -85,6 +94,7 @@ section {
   height: 100%;
   width: 100%;
 }
+
 .home-text h1 {
   margin: 20px 0;
   font-size: var(--h1-font);
@@ -92,32 +102,34 @@ section {
   line-height: 1.1;
   letter-spacing: 2px;
 }
+
 span {
   color: var(--main-color);
 }
+
 .home-text h4 {
   color: var(--text-color);
   font-size: 24px;
   font-weight: 600;
   text-align: center;
 }
+
 .home-text h3 {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 3rem;
   text-align: center;
 }
+
 .loader {
   font-size: 2rem;
   font-family: sans-serif;
   font-variant: small-caps;
   font-weight: 900;
-  background: conic-gradient(
-    #8655fb 0 25%,
-    #17feff 25% 50%,
-    #8655fb 50% 75%,
-    #17feff 75%
-  );
+  background: conic-gradient(#8655fb 0 25%,
+      #17feff 25% 50%,
+      #8655fb 50% 75%,
+      #17feff 75%);
   background-size: 200% 200%;
   animation: animateBackground 4.5s ease-in-out infinite;
   color: transparent;
@@ -143,6 +155,7 @@ span {
     background-position: 0 0;
   }
 }
+
 .container {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
@@ -158,38 +171,34 @@ span {
   display: none;
 }
 
-.input-btn:is(:checked) + .neon-btn .span {
+.input-btn:is(:checked)+.neon-btn .span {
   inset: 2px;
   background-color: #4090b5;
-  background: repeating-linear-gradient(
-      to bottom,
+  background: repeating-linear-gradient(to bottom,
       transparent 0%,
       #4090b5 1px,
       #4090b5 3px,
       #4090b5 5px,
       #4090b5 4px,
-      transparent 0.5%
-    ),
-    repeating-linear-gradient(
-      to left,
+      transparent 0.5%),
+    repeating-linear-gradient(to left,
       hsl(295, 60%, 12%) 100%,
-      hsl(295, 60%, 12%) 100%
-    );
+      hsl(295, 60%, 12%) 100%);
   box-shadow: inset 0 40px 20px hsl(296, 59%, 10%);
 }
 
-.input-btn:is(:checked) + .neon-btn .txt {
+.input-btn:is(:checked)+.neon-btn .txt {
   text-shadow: 2px 4px 1px #9e30a9, 2px 2px 1px #4090b5,
     0 0 20px rgba(255, 255, 255, 0.616);
   color: rgb(255, 255, 255);
   animation: colorchange 0.3s ease;
 }
 
-.input-btn:is(:checked) + .neon-btn::before {
+.input-btn:is(:checked)+.neon-btn::before {
   animation-duration: 0.6s;
 }
 
-.input-btn:is(:checked) + .neon-btn::after {
+.input-btn:is(:checked)+.neon-btn::after {
   animation-duration: 0.6s;
 }
 
@@ -206,50 +215,42 @@ span {
   position: relative;
   overflow: hidden;
   transition: all 2s ease-in-out;
-  -webkit-clip-path: polygon(
-    6% 0,
-    93% 0,
-    100% 8%,
-    100% 86%,
-    90% 89%,
-    88% 100%,
-    5% 100%,
-    0% 85%
-  );
-  clip-path: polygon(
-    6% 0,
-    93% 0,
-    100% 8%,
-    100% 86%,
-    90% 89%,
-    88% 100%,
-    5% 100%,
-    0% 85%
-  );
+  -webkit-clip-path: polygon(6% 0,
+      93% 0,
+      100% 8%,
+      100% 86%,
+      90% 89%,
+      88% 100%,
+      5% 100%,
+      0% 85%);
+  clip-path: polygon(6% 0,
+      93% 0,
+      100% 8%,
+      100% 86%,
+      90% 89%,
+      88% 100%,
+      5% 100%,
+      0% 85%);
 }
 
 .neon-btn .span {
   display: flex;
-  -webkit-clip-path: polygon(
-    6% 0,
-    93% 0,
-    100% 8%,
-    100% 86%,
-    90% 89%,
-    88% 100%,
-    5% 100%,
-    0% 85%
-  );
-  clip-path: polygon(
-    6% 0,
-    93% 0,
-    100% 8%,
-    100% 86%,
-    90% 89%,
-    88% 100%,
-    5% 100%,
-    0% 85%
-  );
+  -webkit-clip-path: polygon(6% 0,
+      93% 0,
+      100% 8%,
+      100% 86%,
+      90% 89%,
+      88% 100%,
+      5% 100%,
+      0% 85%);
+  clip-path: polygon(6% 0,
+      93% 0,
+      100% 8%,
+      100% 86%,
+      90% 89%,
+      88% 100%,
+      5% 100%,
+      0% 85%);
   position: absolute;
   inset: 1px;
   background-color: #212121;
@@ -272,16 +273,14 @@ span {
   height: 300px;
   aspect-ratio: 1.5/1;
   box-shadow: -17px -19px 20px #9e30a9;
-  background-image: conic-gradient(
-    #9e30a9,
-    transparent,
-    transparent,
-    transparent,
-    transparent,
-    transparent,
-    transparent,
-    #9e30a9
-  );
+  background-image: conic-gradient(#9e30a9,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      #9e30a9);
   animation: rotate 4s linear infinite -2s;
 }
 
@@ -291,17 +290,15 @@ span {
   height: 300px;
   aspect-ratio: 1.5/1;
   box-shadow: -17px -19px 10px #4090b5;
-  background-image: conic-gradient(
-    #4090b5,
-    transparent,
-    transparent,
-    transparent,
-    transparent,
-    transparent,
-    transparent,
-    transparent,
-    #4090b5
-  );
+  background-image: conic-gradient(#4090b5,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      #4090b5);
   animation: rotate 4s linear infinite;
 }
 
@@ -345,6 +342,7 @@ span {
     background-color: transparent;
   }
 }
+
 .scanner span {
   color: transparent;
   font-size: 1.4rem;
@@ -368,6 +366,7 @@ span {
 }
 
 @keyframes load91371 {
+
   0%,
   10%,
   100% {
@@ -404,6 +403,7 @@ span {
     width: 100%;
   }
 }
+
 .btn {
   display: inline-block;
   padding: 14px 40px;
@@ -415,6 +415,7 @@ span {
   border: 1px solid var(--main-color);
   transition: all 0.4s ease;
 }
+
 .btn:hover {
   transform: scale(1.01) translateY(-5px);
   background: transparent;
@@ -426,12 +427,14 @@ header.sticky {
   background: var(--bg-color);
   border-bottom: 1px solid #0e1630;
 }
+
 .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2rem;
 }
+
 .about-text h4 {
   margin: 10px 0;
   color: var(--second-color);
@@ -439,11 +442,13 @@ header.sticky {
   font-weight: 600;
   text-align: center;
 }
+
 .about-text h2 {
   font-size: var(--h2-font);
   text-align: center;
   color: var(--main-color);
 }
+
 .about-text p {
   color: var(--second-color);
   font-size: var(--p-font);
@@ -451,6 +456,7 @@ header.sticky {
   margin-bottom: 2rem;
   text-align: center;
 }
+
 .about-gri {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
@@ -458,10 +464,12 @@ header.sticky {
   gap: 1rem;
   margin-bottom: 3rem;
 }
+
 .about-in h5 {
   font-size: 22px;
   font-weight: 600;
 }
+
 .about-img img {
   height: auto;
   width: 100%;
@@ -471,16 +479,19 @@ header.sticky {
 .main-text {
   text-align: center;
 }
+
 .main-text h2 {
   font-size: var(--h2-font);
   margin-bottom: 10px;
   color: var(--main-color);
 }
+
 .main-text h4 {
   color: var(--main-color);
   font-size: 24px;
   font-weight: 600;
 }
+
 .platforms-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
@@ -602,21 +613,25 @@ button:hover {
   transition: all 0.4s ease;
   cursor: pointer;
 }
+
 .box h3 {
   font-size: 24px;
   font-weight: 600;
   margin: 15px 0;
   transition: all 0.4s ease;
 }
+
 .box p {
   color: var(--second-color);
   font-size: var(--p-font);
   line-height: 30px;
 }
+
 .box:hover {
   transform: scale(1.01) translateY(-5px);
   border-top: 5px solid var(--main-color);
 }
+
 .box:hover h3 {
   color: var(--main-color);
 }
@@ -628,6 +643,7 @@ button:hover {
   gap: 1rem;
   margin-top: 5rem;
 }
+
 .row img {
   height: auto;
   width: 100%;
@@ -635,31 +651,37 @@ button:hover {
   margin-bottom: 1.5rem;
   box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
 }
+
 .row {
   padding: 25px;
   background: #12141c;
   border-radius: 0.5rem;
   transition: all 0.4s ease;
 }
+
 .main-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
+
 .row h3 {
   font-size: 10px;
   font-weight: 700;
 }
+
 .row h6 {
   color: var(--main-color);
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 1px;
 }
+
 .row-icon i {
   font-size: 21px;
 }
+
 .row:hover {
   transform: scale(1.01) translateY(-5px);
   cursor: pointer;
@@ -671,28 +693,34 @@ button:hover {
   align-items: center;
   gap: 3rem;
 }
+
 .contact-text h4 {
   margin: 15px 0;
   color: var(--main-color);
   font-size: 20px;
   font-weight: 600;
 }
+
 .contact-text h2 {
   font-size: var(--h2-font);
 }
+
 .contact-text p {
   color: var(--second-color);
   font-size: var(--p-font);
   line-height: 30px;
   margin-bottom: 2rem;
 }
+
 .contact-list {
   margin-bottom: 3rem;
 }
+
 .contact-list li {
   margin-bottom: 10px;
   display: block;
 }
+
 .contact-list li a {
   display: block;
   color: var(--second-color);
@@ -700,10 +728,12 @@ button:hover {
   font-weight: 600;
   transition: all 0.4s ease;
 }
+
 .contact-list li a:hover {
   transform: scale(1.01) translateY(-5px);
   color: var(--main-color);
 }
+
 .contact-icons i {
   height: 40px;
   width: 40px;
@@ -717,6 +747,7 @@ button:hover {
   margin-right: 10px;
   transition: all 0.4s ease;
 }
+
 .contact-icons i:hover {
   transform: scale(1.01) translateY(-5px);
   color: var(--text-color);
@@ -726,6 +757,7 @@ button:hover {
 .contact-form form {
   position: relative;
 }
+
 .contact-form form input,
 form textarea {
   border: none;
@@ -739,10 +771,12 @@ form textarea {
   margin-bottom: 0.5rem;
   border-radius: 0.5rem;
 }
+
 .contact-form textarea {
   resize: none;
   height: 220px;
 }
+
 .contact-form form .send {
   display: inline-block;
   font-size: 17px;
@@ -762,11 +796,13 @@ form textarea {
   font-weight: 600;
   letter-spacing: 1px;
 }
+
 .top {
   position: fixed;
   bottom: 2.1rem;
   right: 2.1rem;
 }
+
 .top i {
   color: var(--text-color);
   background: var(--main-color);
@@ -779,9 +815,11 @@ form textarea {
   header {
     padding: 16px 3%;
   }
+
   header.sticky {
     padding: 8px 3%;
   }
+
   section {
     padding: 130px 3% 60px;
   }
@@ -793,18 +831,23 @@ form textarea {
     --h2-font: 2.9rem;
     --p-font: 1rem;
   }
+
   section {
     padding: 70px 3% 60px;
   }
+
   .home {
     height: 85vh;
   }
+
   .about {
     grid-template-columns: 1fr;
   }
+
   .about-img {
     text-align: center;
   }
+
   .contact {
     grid-template-columns: 1fr;
   }
@@ -814,6 +857,7 @@ form textarea {
   #menu-icon {
     display: block;
   }
+
   .navbar {
     position: absolute;
     top: -600px;
@@ -825,14 +869,17 @@ form textarea {
     text-align: left;
     transition: all 0.4s ease;
   }
+
   .navbar a {
     display: block;
     padding: 1rem;
     margin: 1rem;
   }
+
   .navbar.active {
     top: 100%;
   }
+
   :root {
     --h1-font: 3.7rem;
     --h2-font: 2.7rem;
